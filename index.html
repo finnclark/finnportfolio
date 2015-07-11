@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Finn Clark - Designer</title>
+	<!-- finnclark.co.nz and local Typekit -->
+	<script src="//use.typekit.net/rvz1htw.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="js/sticky.min.js"></script>
+	<script language="JavaScript">
+	var frmvalidator  = new Validator("contactform");
+	frmvalidator.addValidation("name","req","Please provide your name");
+	frmvalidator.addValidation("email","req","Please provide your email");
+	frmvalidator.addValidation("email","email", 
+		"Please enter a valid email address");
+	</script>
+</head>
+<body>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MCKX7C"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MCKX7C');</script>
+<!-- End Google Tag Manager -->
+
+	<div class="container-fluid">
+
+		<div class="border-top">
+			<div>
+				<a href="index.html"><h1>Finn Clark</h1></a>
+				<div>
+					<a href="#about">About</a>
+					<a href="#work">Work</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</div>
+		</div>
+		<div class="border-right"></div>
+		<div class="border-left"></div>
+		<div class="border-bottom">
+			<div>
+				<a href="https://twitter.com/finnhello">Twitter</a>
+				<a href="https://www.behance.net/finnvclark">Behance</a>
+				<a href="https://nz.linkedin.com/in/finnhello">LinkedIn</a>
+				<a href="https://instagram.com/finnsta_gram/">Instagram</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="left-content">
+				<img src="img/coverphoto.jpg">
+				<div class="divider"></div>
+				<div class="body-content">
+					<div>
+						<h1 id="about">A little about me</h1>
+						<p>Currently I am studying a Bachelor of Design, majoring in Graphic Design at AUT University in New Zealand. I started coding working for an internship in early 2014 and I have been improving my ability &amp knowledge of the vast web world since. I love the idea of being able to design and build my own websites. Exciting projects are in the works...</p>
+						<div class="profile-image-box">
+							<img src="img/finnhellohover.jpg">
+							<img src="img/finnhello.jpg">
+						</div>
+						<h1 class="skills-title">Skills</h1>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<h2>Web &amp Design</h2>
+							<p class="skill-htmlcss">HTML + CSS<span></span></p>
+							<p class="skill-bootstrap">Bootstrap<span></span></p>
+							<p class="skill-sass">SASS<span></span></p>
+							<p class="skill-jquery">JQuery<span></span></p>
+							<p class="skill-wordpress">WordPress<span></span></p>
+							<p class="skill-emberemblem">Ember + Emblem<span></span></p>
+							<br>
+							<p class="skill-adobe">Adobe Creative Suite<span></span></p>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<h2>Other</h2>
+							<p class="skill-photography">Photography<span></span></p>
+							<p class="skill-illustration">Illustration<span></span></p>
+							<p class="skill-eating">Eating Avocados + Feijoas<span></span></p>
+						</div>
+					</div>
+
+					<div class="work-section">
+						<h1 id="work">Work</h1>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<a href="work/robin-typeface.html"><img src="img/previews/robin-typeface-preview.png"></a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<a href="work/studentvoice.html"><img src="img/previews/student-voice-preview.png"></a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<a href="work/finnportfolio.html"><img src="img/previews/finnportfolio-preview.jpg"></a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<a href="work/tompiha.html"><img src="img/previews/tom-piha-preview.jpg"></a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<a href="work/ahika.html"><img src="img/previews/ahika-preview.jpg"></a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-6">
+							<a href="work/thepoint.html"><img src="img/previews/thepoint-preview.jpg"></a>
+						</div>
+					</div>
+
+					<div class="contact-block">
+						<h1 id="contact">Contact</h1>
+						<form method="post" action="contact-form-handler.php">
+							<input type="text" name="name" placeholder="Name">
+							<input type="text" name="email" placeholder="Email">
+							<textarea placeholder="What do you want?"></textarea>
+							<input type="submit" value="Send">
+						</form>
+					</div>
+
+				</div>
+			</div>
+			
+			<div class="nav-box nav-box-hide">
+				<div>
+					<a href="#about">About</a>
+					<a href="#work">Work</a>
+					<a href="#contact">Contact</a>
+					<hr>
+					<a href="https://twitter.com/finnhello">Twitter</a>
+					<a href="https://www.behance.net/finnvclark">Behance</a>
+					<a href="https://nz.linkedin.com/in/finnhello">LinkedIn</a>
+					<a href="https://instagram.com/finnsta_gram/">Instagram</a>
+				</div>
+				<a href="index.html"><h1>Finn Clark</h1></a>
+				<h2>I am a</h2>
+				<h3>front-end designer</h3>
+				<h3>photo takerer</h3>
+				<h3>coffee <span>snob</span> <span>enthusiast</span> snob</h3>
+			</div>
+			
+		</div>
+	</div>
+
+<script type="text/javascript">
+	$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 500);
+    }
+	});
+</script>
+	
+</body>
