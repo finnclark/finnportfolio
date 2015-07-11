@@ -133,7 +133,7 @@ hr{
 }
 
 .nav-box h1, .border-top h1{
-	width: 104px;
+	width: 111px;
 	margin-bottom: 94px;
 	color: #333333;
 }
@@ -214,7 +214,7 @@ hr{
 }
 
 .body-content div h1{
-	width: 174px;
+	width: 186px;
 	margin-bottom: 60px;
 }
 
@@ -225,7 +225,7 @@ hr{
 /*Skills*/
 
 .skills-title{
-	width: 53px !important;
+	width: 56px !important;
 }
 
 .body-content div div h2{
@@ -242,7 +242,7 @@ hr{
 }
 
 .skill-htmlcss{
-	width: 73px;
+	width: 80px;
 }
 .skill-bootstrap{
 	width: 60px;
@@ -257,10 +257,10 @@ hr{
 	width: 65px;
 }
 .skill-emberemblem{
-	width: 103px;
+	width: 111px;
 }
 .skill-adobe{
-	width: 125px;
+	width: 138px;
 }
 
 .skill-photography{
@@ -270,7 +270,7 @@ hr{
 	width: 67px;
 }
 .skill-eating{
-	width: 155px;
+	width: 170px;
 }
 
 .skill-htmlcss:hover > span, .skill-bootstrap:hover > span, .skill-sass:hover > span, 
@@ -348,7 +348,7 @@ hr{
 /*Work*/
 
 .work-section h1{
-	width: 57px !important;
+	width: 61px !important;
 	margin-left: 100px;
 	border-top: 0px solid transparent;
 	padding-top: 60px;
@@ -381,7 +381,7 @@ hr{
 }
 
 .contact-block h1{
-	width: 83px !important;
+	width: 89px !important;
 	margin-bottom: 30px !important;
 }
 
@@ -730,8 +730,16 @@ textarea{
 		padding: 18px 28px 0;
 	}
 
+	.border-top div div a {
+		margin-left: 20px;
+	}
+
 	.border-bottom div a{
-		padding: 0 20px;
+		padding: 0 15px;
+	}
+
+	.contact-block input:last-child {
+		width: 60px;
 	}
 
 }
