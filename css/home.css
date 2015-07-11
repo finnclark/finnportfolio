@@ -669,6 +669,7 @@ textarea{
 
 	.work-section h1{
 		margin-left: 45px;
+		padding-top: 90px;
 	}
 
 	.left-content{
@@ -707,7 +708,7 @@ textarea{
 	}
 
 	.body-content div div p:last-child {
-		margin-bottom: 30px;
+		margin-bottom: 0px;
 	}
 
 	.work-section{
