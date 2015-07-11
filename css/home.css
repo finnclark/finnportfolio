@@ -12,6 +12,16 @@ body{
 	background-color: #EFEFEF; 
 }
 
+#hideAll{
+	position: fixed;
+	left: 0px; 
+	right: 0px; 
+	top: 0px; 
+	bottom: 0px; 
+	background-color: white;
+	z-index: 99; /* Higher than anything else in the document */
+}
+
 a{
 	color: #D2882E;
 }
@@ -351,17 +361,17 @@ hr{
 
 /*Work*/
 
+.work-section{
+	padding: 0 15px !important;
+	margin: 0 0 85px 0!important;
+	display: inline-block;
+}
+
 .work-section h1{
 	width: 61px !important;
 	margin-left: 100px;
 	border-top: 0px solid transparent;
 	padding-top: 60px;
-}
-
-.work-section{
-	padding: 0 15px !important;
-	margin: 0 0 150px 0!important;
-	display: inline-block;
 }
 
 .work-section div{
@@ -376,13 +386,34 @@ hr{
 
 .contact-block{
 	width: 100%;
-	height: 340px;
+	height: 210px;
 	background-color: white;
 	padding: 30px !important;
 	margin: 0 !important;
 	border: 30px solid #EFEFEF;
 	display: inline-block;
 }
+
+.contact-block a div{
+	text-align: center;
+	display: inline-block;
+	padding-top: 6px;
+	width: 100%;
+	background-color: #EFEFEF;
+	height: 30px;
+}
+
+.contact-block a{
+	font-style: italic;
+	color: #333333;
+	width: 100%;
+	height: 30px;
+}
+
+.contact-block a div:hover{
+	color: #D2882E;
+}
+
 
 .contact-block h1{
 	width: 89px !important;
