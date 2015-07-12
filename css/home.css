@@ -762,6 +762,10 @@ textarea{
 		margin: 0 30px;
 	}
 
+	.work-section div {
+		padding: 5px !important;
+	}
+
 	.work-section h1{
 		margin-left: 15px;
 	}
@@ -776,6 +780,10 @@ textarea{
 
 	.border-bottom div a{
 		padding: 0 12px;
+	}
+
+	.contact-block div {
+		margin: 0 !important;
 	}
 
 	.contact-block input:last-child {
