@@ -802,10 +802,6 @@ textarea{
 	text-align: center;
 }
 
-.middle-content img{
-	padding: 5px;
-}
-
 .middle-content h2{
 	position: relative;
 	top: -23px;
@@ -815,13 +811,8 @@ textarea{
 	cursor: default;
 }
 
-.flickity-page-dots{
-	bottom: -45px !important;
-}
-
 .gallery{
 	margin-top: -17px;
-	padding-top: 30px;
 }
 
 .gallery-cell{
@@ -830,7 +821,7 @@ textarea{
 }
 
 .caption{
-	margin: 75px auto 0;
+	margin: 40px auto 0;
 	width: 40%;
 }
 
@@ -928,6 +919,22 @@ textarea{
 	.middle-content h2{
 		right: -45px;
 		text-align: right;
+	}
+
+	.flickity-page-dots{
+		bottom: -45px !important;
+	}
+
+	.middle-content img{
+		padding: 5px;
+	}
+
+	.gallery{
+		padding-top: 30px;
+	}
+
+	.caption{
+		margin: 75px auto 0;
 	}
 
 }
