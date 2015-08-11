@@ -321,16 +321,16 @@ hr{
 	border-right: 200px solid white !important;
 }
 .skill-sass span{
-	border-right: 240px solid white !important;
+	border-right: 270px solid white !important;
 }
 .skill-jquery span{
-	border-right: 290px solid white !important;
+	border-right: 250px solid white !important;
 }
 .skill-wordpress span{
-	border-right: 280px solid white !important;
+	border-right: 260px solid white !important;
 }
 .skill-emberemblem span{
-	border-right: 300px solid white !important;
+	border-right: 350px solid white !important;
 }
 .skill-adobe span{
 	border-right: 100px solid white !important;
@@ -421,7 +421,7 @@ hr{
 }
 
 .contact-block div{
-	margin: 0;
+	margin: 0 !important;
 }
 
 .contact-block input:focus, .contact-block textarea:focus{
@@ -802,6 +802,10 @@ textarea{
 	text-align: center;
 }
 
+.middle-content img{
+	padding: 5px;
+}
+
 .middle-content h2{
 	position: relative;
 	top: -23px;
@@ -811,8 +815,13 @@ textarea{
 	cursor: default;
 }
 
+.flickity-page-dots{
+	bottom: -45px !important;
+}
+
 .gallery{
 	margin-top: -17px;
+	padding-top: 30px;
 }
 
 .gallery-cell{
@@ -821,7 +830,7 @@ textarea{
 }
 
 .caption{
-	margin: 40px auto 0;
+	margin: 75px auto 0;
 	width: 40%;
 }
 
