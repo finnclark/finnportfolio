@@ -22,6 +22,10 @@ body{
 	z-index: 99; /* Higher than anything else in the document */
 }
 
+i{
+	font-style: normal;
+}
+
 a{
 	color: #D2882E;
 }
