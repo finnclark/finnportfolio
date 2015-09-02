@@ -955,6 +955,15 @@ textarea{
 
 }
 
+@media (max-width: 319px){
+
+	.body-content div div h2:last-child{
+		margin-bottom: 47px;
+	}
+
+
+}
+
 
 
 
