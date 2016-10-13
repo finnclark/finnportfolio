@@ -17,6 +17,7 @@ body.active {
 }
 
 nav {
+
   display: flex;
   text-align: center;
   div {
@@ -26,6 +27,11 @@ nav {
     top: 15px;
     left: 0;
     right: 0;
+    @include respond-at-and-below($break-mobile) {
+      .nav-dropdown li:nth-last-child(1){
+        display: none !important;
+      }
+    }
   }
   #nav-slide {
     transform: translateY(-40px);
@@ -58,9 +64,6 @@ nav {
     }
   }
   .nav-title {
-    .home-link {
-      z-index: 999;
-    }
     h2:hover + .nav-dropdown {
       @include transition;
       opacity: 1;
