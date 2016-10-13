@@ -58,6 +58,9 @@ nav {
     }
   }
   .nav-title {
+    .home-link {
+      z-index: 999;
+    }
     h2:hover + .nav-dropdown {
       @include transition;
       opacity: 1;

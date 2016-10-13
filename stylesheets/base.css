@@ -81,6 +81,8 @@ nav {
           text-decoration: none; }
           nav ul li h2 a:hover {
             color: #98CAC9 !important; }
+  nav .nav-title .home-link {
+    z-index: 999; }
   nav .nav-title h2:hover + .nav-dropdown {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;

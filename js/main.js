@@ -11,6 +11,19 @@ $(document).ready(function(){
   });
 });
 
+// Nav Mobile
+
+$(document).ready(function(){
+  $(".home-link").click(function(){
+    $("#nav-slide").addClass(".slide-down");
+    // $("body").addClass("active");
+  });
+  $(".home-link").click(function(){
+    $("#nav-slide").removeClass(".slide-down");
+    $("body").removeClass("active");
+  });
+});
+
 // Gallery Zoom
 
 $(document).ready(function(){
