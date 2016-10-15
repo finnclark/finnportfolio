@@ -16,8 +16,28 @@ body.active {
   overflow-y: hidden;
 }
 
-nav {
+@media( pointer: coarse) {
+  nav {
+    .nav-dropdown {
+      @include transition;
+      display: inline-flex;
+      opacity: 1 !important;
+      li {
+        margin: 0 !important;
+      }
+    }
+    ul {
+      li {
+        h2 {
+          font-size: 13px !important;
+          float: left;
+        }
+      }
+    }
+  }
+}
 
+nav {
   display: flex;
   text-align: center;
   div {
@@ -29,7 +49,7 @@ nav {
     right: 0;
     @include respond-at-and-below($break-mobile) {
       .nav-dropdown li:nth-last-child(1){
-        display: none !important;
+        // display: none !important;
       }
     }
   }

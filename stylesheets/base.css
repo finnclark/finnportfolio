@@ -38,6 +38,18 @@ body.portfolio {
 body.active {
   overflow-y: hidden; }
 
+@media (pointer: coarse) {
+  nav .nav-dropdown {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    opacity: 1 !important; }
+    nav .nav-dropdown li {
+      margin: 0 !important; }
+  nav ul li h2 {
+    font-size: 13px !important;
+    float: left; } }
 nav {
   display: flex;
   text-align: center; }
@@ -54,9 +66,6 @@ nav {
     top: 15px;
     left: 0;
     right: 0; }
-    @media (max-width: 420px) {
-      nav div .nav-dropdown li:nth-last-child(1) {
-        display: none !important; } }
   nav #nav-slide {
     transform: translateY(-40px);
     opacity: 0; }
