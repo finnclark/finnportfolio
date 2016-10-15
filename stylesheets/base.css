@@ -48,8 +48,11 @@ body.active {
     nav .nav-dropdown li {
       margin: 0 !important; }
   nav ul li h2 {
-    font-size: 13px !important;
     float: left; } }
+  @media (pointer: coarse) and (max-width: 420px) {
+    nav ul li h2 {
+      font-size: 13px !important; } }
+
 nav {
   display: flex;
   text-align: center; }
@@ -657,7 +660,7 @@ body.gallery .gallery-wrap {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    min-width: calc(50% - 30px);
+    width: calc(50vw - 40px);
     height: 27vw;
     margin: 15px;
     cursor: zoom-in;

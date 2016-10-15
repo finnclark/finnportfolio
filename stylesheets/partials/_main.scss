@@ -29,8 +29,10 @@ body.active {
     ul {
       li {
         h2 {
-          font-size: 13px !important;
           float: left;
+          @include respond-at-and-below($break-mobile) {
+            font-size: 13px !important;
+          }
         }
       }
     }
