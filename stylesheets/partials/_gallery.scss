@@ -75,6 +75,9 @@ body.gallery {
       left: 0;
       cursor: default !important;
       @include respond-at-and-above($break-small) {
+        height: 400px !important;
+      }
+      @include respond-at-and-above($break-900) {
         height: 600px !important;
       }
       @include respond-at-and-above($break-xl) {
