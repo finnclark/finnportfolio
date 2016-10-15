@@ -4,7 +4,9 @@ h2 {
   font-size: 15px;
   letter-spacing: 1.5;
 }
-
+body.gallery {
+  margin: 0;
+}
 body.portfolio {
   @include lineargradient-vertical($off-white, white);
   ::-webkit-scrollbar {
@@ -32,6 +34,7 @@ body.active {
           float: left;
           @include respond-at-and-below($break-mobile) {
             font-size: 13px !important;
+            padding: 5px 10px !important;
           }
         }
       }

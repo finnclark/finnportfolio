@@ -1,9 +1,12 @@
 body.gallery {
   .gallery-wrap {
-    margin: 200px auto;
-    max-width: 1100px;
+    margin: 100px auto 60px;
+    max-width: $break-xl;
     display: flex;
     flex-wrap: wrap;
+    @include respond-at-and-above($break-small) {
+      margin: 100px auto;
+    }
     .gallery-image.visible {
       opacity: 1;
     }
@@ -13,26 +16,26 @@ body.gallery {
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      width: calc(50vw - 40px);
+      width: calc(50vw - 30px);
       height: 27vw;
-      margin: 15px;
+      margin: 10px 15px;
       cursor: zoom-in;
       opacity: 0;
       @include respond-at-and-above($break-small) {
-        min-width: calc(33.3% - 40px);
+        width: calc(33.3% - 40px);
         height: 18vw;
         margin: 20px;
       }
       @include respond-at-and-above($break-900) {
-        min-width: calc(25% - 40px);
+        width: calc(25% - 40px);
         height: 13vw;
       }
       @include respond-at-and-above($break-large) {
-        min-width: calc(20% - 40px);
+        width: calc(20% - 40px);
         height: 10vw;
       }
       @include respond-at-and-above($break-xl) {
-        min-width: calc(20% - 40px);
+        width: calc(20% - 40px);
         height: 125px;
       }
       .close-btn {
@@ -63,16 +66,25 @@ body.gallery {
     }
     .image-active {
       @include transition-snap;
-      min-width: calc(100% - 40px);
-      max-width: calc(100% - 40px);
-      height: 600px !important;
+      min-width: calc(100vw - 20px);
+      max-width: calc(100vw - 20px);
+      height: 300px !important;
+      margin: 10px;
       position: relative;
       top: 0;
       left: 0;
       cursor: default !important;
+      @include respond-at-and-above($break-small) {
+        height: 600px !important;
+      }
+      @include respond-at-and-above($break-xl) {
+        min-width: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+      }
       .close-btn {
         visibility: visible;
       }
+
     }
     div {
       &:nth-child(1) {
