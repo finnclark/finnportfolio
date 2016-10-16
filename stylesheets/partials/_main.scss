@@ -20,6 +20,18 @@ body.active {
 
 @media( pointer: coarse) {
   nav {
+    .slide-down {
+      &:after {
+        content: '';
+        z-index: -1;
+        width: 100vw;
+        height: 45px;
+        background-color: $white;
+        position: absolute;
+        top: -15px;
+        left: 0;
+      }
+    }
     .nav-dropdown {
       @include transition;
       display: inline-flex;
@@ -30,6 +42,7 @@ body.active {
     }
     ul {
       li {
+        margin-top: -5px;
         h2 {
           float: left;
           @include respond-at-and-below($break-mobile) {
@@ -112,7 +125,7 @@ nav {
       margin-top: -20px;
       a {
         text-decoration: none;
-        color: $black;
+        color: $off-black;
         &:hover {
           color: $color-secondary;
         }

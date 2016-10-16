@@ -13,16 +13,16 @@ $(document).ready(function(){
 
 // Nav Mobile
 
-$(document).ready(function(){
-  $(".home-link").click(function(){
-    $("#nav-slide").addClass(".slide-down");
-    // $("body").addClass("active");
-  });
-  $(".home-link").click(function(){
-    $("#nav-slide").removeClass(".slide-down");
-    $("body").removeClass("active");
-  });
-});
+// $(document).ready(function(){
+//   $(".home-link").click(function(){
+//     $("#nav-slide").addClass(".slide-down");
+//     // $("body").addClass("active");
+//   });
+//   $(".home-link").click(function(){
+//     $("#nav-slide").removeClass(".slide-down");
+//     $("body").removeClass("active");
+//   });
+// });
 
 // Gallery Zoom
 
@@ -30,6 +30,9 @@ $(document).ready(function(){
   $(".gallery-image").click(function() {
     $(this).addClass("image-active").siblings().removeClass("image-active").removeClass("image-hidden");
     $(this).siblings().addClass("image-hidden");
+    $('html,body').animate({
+        scrollTop: $("nav").offset().top},
+        'fast');
   });
   $(".close-btn").click(function(e) {
     let active = document.querySelector('.image-active');
