@@ -819,7 +819,7 @@ body.gallery .gallery-wrap {
     transition-delay: 0s;
     opacity: 0;
     transform: translateY(-20px); }
-    @media (max-width: 420px) {
+    @media (min-width: 420px) {
       .parallax-wrap .parallax-layer {
         width: 200px; } }
     .parallax-wrap .parallax-layer:hover {
