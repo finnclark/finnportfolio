@@ -73,7 +73,7 @@ var SoloJazz = {
         console.log(galleryItem);
 
         function lazyAddGallery(el, className, timing) {
-          setTimeout(() => {
+          setTimeout(function () {
             el.classList.add(className);
           }, timing);
         }
@@ -108,7 +108,7 @@ var SoloJazz = {
 
 
     function lazyAddClass(el, className, timing) {
-      setTimeout(() => {
+      setTimeout(function () {
         el.classList.add(className);
       }, timing);
     }
