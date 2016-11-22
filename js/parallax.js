@@ -1,4 +1,4 @@
-let Parallax = {
+var Parallax = {
   init(el, displace)  {
     this.animateItem(el, displace);
   },
@@ -11,7 +11,7 @@ let Parallax = {
   },
   animateItem(el, displace) {
     if (typeof window.orientation !== 'undefined') { return; }
-    let scrollPosition = this.setPosition();
+    var scrollPosition = this.setPosition();
     el.style.transform = "translate3d(0px, "+(scrollPosition / displace)+"px, 0px)";
   }
 }

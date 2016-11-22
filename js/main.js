@@ -35,7 +35,7 @@ $(document).ready(function(){
         'fast');
   });
   $(".close-btn").click(function(e) {
-    let active = document.querySelector('.image-active');
+    var active = document.querySelector('.image-active');
     e.preventDefault();
     e.stopPropagation();
     active.classList.remove('image-active');
@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 
 
-let SoloJazz = {
+var SoloJazz = {
   dom: {
     docImages: document.querySelector('.parallax-wrap'),
     galleryImages: document.querySelector('.gallery')
@@ -141,10 +141,10 @@ let SoloJazz = {
 
     console.log(landingImg1);
 
-    let tempX = 0,
+    var tempX = 0,
         tempY = 0;
 
-    let handleScrolling = () => {
+    var handleScrolling = () => {
       Parallax.init(landingImg1, 14);
       Parallax.init(landingImg2, -6);
       Parallax.init(landingImg3, -4.3);
@@ -156,7 +156,7 @@ let SoloJazz = {
       window.addEventListener('scroll', handleScrolling);
     }, 900);
 
-    let handleShadowBoxing = (e) => {
+    var handleShadowBoxing = (e) => {
       tempX = e.pageX
       tempY = e.pageY
       // catch possible negative values in NS4
