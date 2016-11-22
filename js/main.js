@@ -144,21 +144,21 @@ var SoloJazz = {
     var tempX = 0,
         tempY = 0;
 
-    var handleScrolling = () => {
+    var handleScrolling = function handleScrolling() {
       Parallax.init(landingImg1, 14);
       Parallax.init(landingImg2, -6);
       Parallax.init(landingImg3, -4.3);
       Parallax.init(landingImg4, -13);
       Parallax.init(landingImg5, -2);
-    }
+    };
 
     setTimeout(function() {
       window.addEventListener('scroll', handleScrolling);
     }, 900);
 
-    var handleShadowBoxing = (e) => {
-      tempX = e.pageX
-      tempY = e.pageY
+    var handleShadowBoxing = function handleShadowBoxing(e) {
+      tempX = e.pageX;
+      tempY = e.pageY;
       // catch possible negative values in NS4
       if (tempX < 0) {
         tempX = 0;
@@ -166,13 +166,13 @@ var SoloJazz = {
       if (tempY < 0) {
         tempY = 0;
       }
-      landingImg1.style.boxShadow = "-"+((tempY / 15) + 10)+"px "+((tempX / 15 + 20))+"px 120px -30px rgba(0,0,0,0.25)";
-      landingImg2.style.boxShadow = "-"+((tempY / 15) + 10)+"px "+((tempX / 15 + 20))+"px 120px -30px rgba(0,0,0,0.25)";
-      landingImg3.style.boxShadow = "-"+((tempY / 15) + 10)+"px "+((tempX / 15 + 20))+"px 120px -30px rgba(0,0,0,0.25)";
-      landingImg4.style.boxShadow = "-"+((tempY / 15) + 10)+"px "+((tempX / 15 + 20))+"px 120px -30px rgba(0,0,0,0.25)";
-      landingImg5.style.boxShadow = "-"+((tempY / 15) + 10)+"px "+((tempX / 15 + 20))+"px 120px -30px rgba(0,0,0,0.25)";
-      return true
-    }
+      landingImg1.style.boxShadow = "-" + (tempY / 15 + 10) + "px " + (tempX / 15 + 20) + "px 120px -30px rgba(0,0,0,0.25)";
+      landingImg2.style.boxShadow = "-" + (tempY / 15 + 10) + "px " + (tempX / 15 + 20) + "px 120px -30px rgba(0,0,0,0.25)";
+      landingImg3.style.boxShadow = "-" + (tempY / 15 + 10) + "px " + (tempX / 15 + 20) + "px 120px -30px rgba(0,0,0,0.25)";
+      landingImg4.style.boxShadow = "-" + (tempY / 15 + 10) + "px " + (tempX / 15 + 20) + "px 120px -30px rgba(0,0,0,0.25)";
+      landingImg5.style.boxShadow = "-" + (tempY / 15 + 10) + "px " + (tempX / 15 + 20) + "px 120px -30px rgba(0,0,0,0.25)";
+      return true;
+    };
     /*
     /     Don't start doing parallax scrolling until after the
     /     initial homepage animation, this way we can translate the elements
